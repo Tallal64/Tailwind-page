@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <script src="https://kit.fontawesome.com/5e42bd53d9.js" crossorigin="anonymous"></script>
+    <title>Tailwind 2.0</title>
+</head>
+
+<body class="">
+    <nav id="navbar" class="container mx-auto p-6">
+
+        <div id="flex-container" class="flex justify-between items-center">
+
+            <div id="logo" class="text-xl font-bold cursor-pointer">
+                Porfolio
+            </div>
+
+            <div id="links" class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-500">Home</a>
+                <a href="#" class="hover:text-gray-500">Community</a>
+                <a href="#" class="hover:text-gray-500">About us</a>
+                <a href="#" class="hover:text-gray-500">Contact Us</a>
+            </div>
+
+            <a href="#" id="button"
+                class="hidden md:block hover:bg-blue-500 bg-blue-700 text-white font-bold text-sm rounded-full p-3 pt-2 px-6">
+                Get Started
+            </a>
+
+            <!-- Hamburger icon -->
+            <button id="menu-btn" class="hamburger block md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- mobile menu -->
+        <div id="menu">
+            <div
+                class="hidden absolute items-center self-end py-8 mt-10 space-y-8 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Home</a>
+                <a href="#">Community</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="hero-section" class="max-w-screen-xl mx-auto">
+        <!-- *** Cover *** -->
+        <section class="container flex flex-col-reverse mx-auto p-6 mt-10 items-center  md:flex-row">
+
+            <div id="text-container" class="flex flex-col space-y-12 items-center mt-32 md:items-start md:w-1/2">
+                <h1 class="max-w-xl text-4xl font-bold capitalize text-center md:text-left md:text-5xl">
+                    Promote your products with colorlib
+                </h1>
+                <p class="capitalize max-w-sm text-center text-gray-500 md:text-left">
+                    your fitness journey will be your life time journey, best fitness website to use as an inspiration,
+                    we have change so many people life.
+                </p>
+
+                <div id="button" class="flex justify-center md:justify-start">
+                    <a href="#"
+                        class="hover:bg-blue-500 bg-blue-700 text-white font-bold text-sm rounded-full p-3 pt-2 px-6">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+
+            <div id="image-container" class="w-1/2">
+                <img src="/img/undraw_start_building_re_xani.svg" class="shadow-2xl">
+            </div>
+
+        </section>
+
+        <!-- *** Featuring *** -->
+        <section class="max-w-6xl mx-auto px-5 mt-32">
+
+            <h2 class="text-4xl font-semibold text-center mb-10 md:text-5xl">
+                Advantages of using our products
+            </h2>
+
+
+            <!-- flex-container 1 -->
+            <div class="container grid gap-y-12 px-6 mt-24 items-center md:grid-cols-2 md:gap-16">
+                <!-- item-1 -->
+                <div class="flex space-x-5">
+                    <div>
+                        <img src="/img/icon-1.svg" class="w-14">
+                    </div>
+
+
+                    <div class="">
+                        <h2 class="text-lg font-semibold">
+                            Grow Your Business
+                        </h2>
+                        <p class="text-gray-400 mb-2 max-w-sm">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.
+                        </p>
+
+                        <a href="#" class="capitalize text-blue-400 ">
+                            learn more
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-2 -->
+                <div class="flex space-x-5">
+                    <div>
+                        <img src="/img/icon-2.svg" class="w-14">
+                    </div>
+
+
+                    <div class="">
+                        <h2 class="text-lg font-semibold">
+                            Build Products
+                        </h2>
+                        <p class="text-gray-400 mb-2 max-w-sm">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.
+                        </p>
+
+                        <a href="#" class="capitalize text-blue-400 ">
+                            learn more
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-3 -->
+                <div class="flex space-x-5">
+                    <div>
+                        <img src="/img/icon-3.svg" class="w-14">
+                    </div>
+
+
+                    <div class="">
+                        <h2 class="text-lg font-semibold">
+                            Success Every Day
+                        </h2>
+                        <p class="text-gray-400 mb-2 max-w-sm">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.
+                        </p>
+
+                        <a href="#" class="capitalize text-blue-400 mt-1">
+                            learn more
+                        </a>
+                    </div>
+                </div>
+
+                <!-- item-4 -->
+                <div class="flex space-x-5">
+                    <div>
+                        <img src="/img/icon-4.svg" class="w-14">
+                    </div>
+
+
+                    <div class="">
+                        <h2 class="text-lg font-semibold">
+                            Bring Ideas to Life
+                        </h2>
+                        <p class="text-gray-400 mb-2 max-w-sm">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there live the blind texts.
+                        </p>
+
+                        <a href="#" class="capitalize text-blue-400 mt-1">
+                            learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 mt-32 px-4 py-6">
+
+        <div class="container flex justify-between items-center mx-auto px-4">
+            <!-- text -->
+            <div class="flex space-x-5 font-bold cursor-pointer text-white">
+                <div class="hover:text-gray-300">About Us</div>
+                <div class="hover:text-gray-300">Contact Us</div>
+            </div>
+
+            <!-- social links -->
+            <div class="space-x-5">
+                <i class="fa-brands fa-twitter text-white text-2xl cursor-pointer hover:text-gray-300"></i>
+                <i class="fa-brands fa-facebook text-white text-2xl cursor-pointer hover:text-gray-300"></i>
+                <i class="fa-brands fa-instagram text-white text-2xl cursor-pointer hover:text-gray-300"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
